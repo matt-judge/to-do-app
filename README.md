@@ -1,61 +1,31 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## Brief Description
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+This project was to create a to-do list system, with the ability to create tasks, view tasks, and complete tasks. This project was created using: 
+<ul>
+    <li>PHP 7.3</li>
+    <li>Laravel 8.1</li>
+    <li>VueJS 2.6.</li>
+    <li>Foundation 6.6</li>
+</ul>
 
-## About Laravel
+This project was relatively simple to create. By opting to not set up a database and instead use the browsers localStorage variable, it saved a lot of time in development, and made the list a lot more optimised and faster to run. The project itself was split into two sections which were visible at all times, the "Create New Task" section and the "My Tasks" section. This was decided due to it being much easier for users to read and update their tasks accordingly, without losing visibility of any of the apps functionality. I opted for a blue background as it is a soothing colour and should be used to de-stress users, which is the primary goal of this app. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Testing
+Throughout the testing stage, I gave the application to several users, who returned with feedback which was hugely beneficial to the project as a whole. The feedback was as follows: 
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<ul>
+    <li><em>Changed green tick icon to empty box icon</em> - Initially I had a green tick next to the current incomplete tasks, which would perform the complete task function once clicked. However, based on feedback which stated that the green tick confused them as it looked as if they had already completed the tasks due to the psychology of the green tick, I then decided to amend this to an empty checkbox. This is so that users could then see as it was not checked, it was incomplete.</li>
+    <li><em>Addition of a "Recently Completed Tasks" section</em> - This section was suggested by a user after noticing that once the tasks were complete, this was irreversible. This addition meant that if users completed tasks in error, and wanted to undo this, that it was possible.</li>
+</ul>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Questions
+The answers to the following questions are below:
 
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<p><strong>1. How could this be expanded?</strong></p>
+<p>This could be expanded in a variety of ways. For example, the addition of a database could incorporate a team based option, for managers to view their teams tasks and set accordingly. This could also imply the use of a comments section, to keep up to date with the task, and how far along to completion you would be. To incorporate machine learning into this, the app could also begin to notice trends in the users tasks, and pre-populate with tasks the user usually adds in a specific day or time.</p>
+<p><strong>2. How would you improve what you have done?</strong></p>
+<p>I would improve what I have done by minimising and optimising the CSS and JavaScript files as much as possible, as I used both the app.css file and the <style></style> tags to incorporate styling into this app. I also could have utilised Foundation more, and used their "Card" styles to make a unified page of styles, instead of using Laravel's default stylings. </p>
+<p><strong>3. Why do you enjoy projects like this?</strong></p>
+<p>Projects like this make me realise how enjoyable developing software can be. Even something as simple as a to-do list can be used to maximum effect to make even just one persons day easier. I find that by consistently going through and making new software, I continually find new ways to improve myself, and realise how vital technologies like the ones I have used are in any scenario.</p>
+<p><strong>4. Did you have any problems? How did you solve them?</strong></p>
+<p>One issue I had when creating this project was setting up a correct development environment. As my laptop had not been a complete development environment previously, I had to go through and set up all the requirements necessary to create this. This allowed me to refresh my knowledge of environments. I also had issues with version control, as pushing work to the repository continually failed for me. This required me to troubleshoot this issue, by using my search engine knowledge to correctly identify the problem, which other users had experienced. Once I tried this solution, the software worked as expected.</p>
