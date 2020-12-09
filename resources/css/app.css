@@ -1,0 +1,11 @@
+body {
+	background-color: #4287f5;
+}
+
+h1, .footer {
+	color: #fff;
+}
+
+.text-success {
+	color: #2ce657;
+}
